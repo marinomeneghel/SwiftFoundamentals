@@ -12,14 +12,27 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let numbers: [Int] = [10, 6, 3, 2, 1, 9]
+        printNumbers(numbers)
+        
+        let letters: [String] = ["a", "b", "c", "d"]
+        printLettersWithIndexes(letters)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    func printLettersWithIndexes(letters: [String]) {
+        for (index, letter) in letters.enumerate() {
+            print("At index \(index) there is \(letter)");
+        }
     }
+    
 
+    func printNumbers(numbers: [Int]) {
+        for num in numbers {
+            print("Num = \(num)");
+        }
+    }
 
 }
 
