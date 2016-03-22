@@ -14,6 +14,7 @@
 		80BEFA811CA156820006C90B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80BEFA7F1CA156820006C90B /* LaunchScreen.storyboard */; };
 		80BEFA8C1CA156820006C90B /* SwiftFoundamentalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BEFA8B1CA156820006C90B /* SwiftFoundamentalsTests.swift */; };
 		80BEFA971CA156820006C90B /* SwiftFoundamentalsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BEFA961CA156820006C90B /* SwiftFoundamentalsUITests.swift */; };
+		80BEFAA61CA15BD30006C90B /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BEFAA51CA15BD30006C90B /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		80BEFA921CA156820006C90B /* SwiftFoundamentalsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftFoundamentalsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80BEFA961CA156820006C90B /* SwiftFoundamentalsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftFoundamentalsUITests.swift; sourceTree = "<group>"; };
 		80BEFA981CA156820006C90B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80BEFAA51CA15BD30006C90B /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		80BEFA751CA156820006C90B /* SwiftFoundamentals */ = {
 			isa = PBXGroup;
 			children = (
+				80BEFAA41CA15BAC0006C90B /* model */,
 				80BEFA761CA156820006C90B /* AppDelegate.swift */,
 				80BEFA781CA156820006C90B /* ViewController.swift */,
 				80BEFA7A1CA156820006C90B /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				80BEFA981CA156820006C90B /* Info.plist */,
 			);
 			path = SwiftFoundamentalsUITests;
+			sourceTree = "<group>";
+		};
+		80BEFAA41CA15BAC0006C90B /* model */ = {
+			isa = PBXGroup;
+			children = (
+				80BEFAA51CA15BD30006C90B /* Person.swift */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80BEFAA61CA15BD30006C90B /* Person.swift in Sources */,
 				80BEFA791CA156820006C90B /* ViewController.swift in Sources */,
 				80BEFA771CA156820006C90B /* AppDelegate.swift in Sources */,
 			);
