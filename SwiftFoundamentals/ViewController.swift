@@ -24,16 +24,15 @@ class ViewController: UIViewController {
     
     func usePersonClass() {
         // Use Person class
-        let marino = Person(firstName: "Marino", lastName: "Meneghel", age: 22)
-        marino.greet()
-        Person.printNumberOfPeople()
+        let marino = EuropeanPerson(firstName: "Marino", lastName: "Meneghel", age: 22)
+        marino.sayHello()
+        marino.sayGoodBye()
         
-        let vale = Person(firstName: "Vale", lastName: "Rossi", age: 26)
-        vale.greet()
-        vale.firstName = "Valentino"
-        vale.greet()
-
-        Person.printNumberOfPeople()
+        let vale = AmericanPerson(firstName: "Seann", lastName: "Bean", age: 27)
+        vale.sayHello()
+        vale.firstName = "Sean"
+        vale.sayGoodBye();
+        AmericanPerson.printNumberOfPeople()
     }
     
     

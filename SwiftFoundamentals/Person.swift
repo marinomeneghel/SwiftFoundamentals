@@ -1,5 +1,5 @@
 //
-//  Person.swift
+//  FriendlyGreater.swift
 //  SwiftFoundamentals
 //
 //  Created by Marino Meneghel on 3/22/16.
@@ -7,44 +7,10 @@
 //
 
 import Foundation
+protocol Person {
 
-class Person {
-    
-    var firstName: String;
-    var lastName: String;
-    var age: Int;
-    static var numberOfPeople: Int = 0;
-    
-    var fullName: String {
-        get {
-            return "\(firstName) \(lastName)"
-        }
-    }
-    
-    init(firstName: String, lastName: String, age: Int) {
-        self.firstName = firstName;
-        self.lastName = lastName;
-        self.age = age;
-        
-        Person.numberOfPeople++
-    }
-    
-    
-    func greet() {
-        print("Hello \(self.fullName)");
-    }
-    
-    
-    class func printNumberOfPeople() {
-        print("There are \(Person.numberOfPeople) persons here!");
-    }
-    
-    
-    
-    
+    func sayHello()
+    func sayGoodBye()
+    func getPersonOrigin() -> String
     
 }
-
-
-
-
