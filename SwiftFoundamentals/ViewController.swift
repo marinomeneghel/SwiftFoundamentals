@@ -20,7 +20,29 @@ class ViewController: UIViewController {
         printLettersWithIndexes(letters)
         
         usePersonClass()
+        
+        // I assign the function returned by makeIncrementer to the incrementByTen constant
+        // This keeps the references to runningTotal and amount variables to use them within
+        // it's body
+        let incrementByTen = makeIncrementer(forIncrement: 10)
+        print("Increment returned \(incrementByTen())")
+        print("Increment returned \(incrementByTen())")
+        print("Increment returned \(incrementByTen())")
+        
+        print("makeIncrementer returns a function: \(makeIncrementer(forIncrement: 5))")
+        print("This way shall return an int right? \(makeIncrementer(forIncrement: 5)())")
     }
+    
+    // Closures (lambda)
+    func makeIncrementer(forIncrement amount: Int) -> () -> Int {
+        var runningTotal = 0
+        func incrementer() -> Int {
+            runningTotal += amount
+            return runningTotal
+        }
+        return incrementer
+    }
+    
     
     func usePersonClass() {
         // Use Person class
