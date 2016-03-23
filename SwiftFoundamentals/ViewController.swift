@@ -21,6 +21,19 @@ class ViewController: UIViewController {
         
         usePersonClass()
         useClousureFunction()
+        
+        testCastingTypes()
+    }
+    
+    
+    func testCastingTypes() {
+        // Conversion Guaranteed by the compiler
+        let myDouble = 1 as Double
+        
+        let myFailingIntCast = "123a" as? Int
+        print("Failing conditional cast result: \(myFailingIntCast)")
+        
+        // another type is the forced cast 'as!': if fails will crash the app (so not suggested)
     }
     
     
