@@ -20,7 +20,11 @@ class ViewController: UIViewController {
         printLettersWithIndexes(letters)
         
         usePersonClass()
-        
+        useClousureFunction()
+    }
+    
+    
+    func useClousureFunction() {
         // I assign the function returned by makeIncrementer to the incrementByTen constant
         // This keeps the references to runningTotal and amount variables to use them within
         // it's body
@@ -33,7 +37,7 @@ class ViewController: UIViewController {
         print("This way shall return an int right? \(makeIncrementer(forIncrement: 5)())")
     }
     
-    // Closures (lambda)
+    // Closures example (lambda)
     func makeIncrementer(forIncrement amount: Int) -> () -> Int {
         var runningTotal = 0
         func incrementer() -> Int {
